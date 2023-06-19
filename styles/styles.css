@@ -28,8 +28,9 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-top: 1em;
+    padding: 1em 0;
     background-color: var(--dark-blue);
+    align-items: center;
 }
 
 nav {
@@ -45,8 +46,22 @@ nav ul li {
     list-style-type: none;
 }
 
-.logo-header {
+article {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 5em;
+}
+
+.logo {
     margin-left: 2em;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    padding: .5em;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .nav-button {
@@ -72,12 +87,25 @@ nav ul li {
     text-shadow: black 0 0 2px;
 }
 
-article {
-    display: flex;
-    flex-direction: row;
-}
 
 .article-content-container {
     display: flex;
     flex-direction: column;
+    margin: 0 2em;
+}
+
+.article-content-container h2 {
+    text-align: center;
+}
+
+.article-img {
+    width: 45em;
+}
+
+.promo-activity {
+    margin: 3em 0;
+    background-image: url(../assets/pictures/promo-volcano.jpg);
+    text-align: center;
+    background-size: contain;
+    height: 22em;
 }
