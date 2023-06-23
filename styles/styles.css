@@ -4,6 +4,7 @@
     --dark-orange: #f77f00;
     --orange-yellow: #fcbf49;
     --tan: #fff3e2;
+    --orange-yellow-hover: #745821;
 }
 
 html {
@@ -52,6 +53,19 @@ article {
     margin: 2em 5em;
 }
 
+city-content {
+    display: flex;
+    flex-direction: column;
+}
+
+city-content h2 {
+    text-align: center;
+}
+
+excursion-content {
+    margin: 0 10em;
+}
+
 .logo {
     margin-left: 2em;
     text-decoration: none;
@@ -65,16 +79,24 @@ article {
 }
 
 .nav-button {
+    font-size: 1.2em;
     margin-left: 1.5em;
     border: 1px solid black;
     background-color: var(--orange-yellow);
     text-decoration: none;
     color: inherit;
-    padding: .2em .4em;
+    padding: .5em .75em;
     border-radius: .1em
 }
 
+.nav-button:hover {
+    background-color: var(--orange-yellow-hover);
+}
+
 .tagline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 3em 0;
     text-align: center;
     background-image: url(../assets/pictures/tagline-background.jpg);
@@ -84,7 +106,9 @@ article {
 
 .tagline {
     color: white;
-    text-shadow: black 0 0 2px;
+    text-shadow: black 0 0 3px;
+    font-size: 4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -100,6 +124,8 @@ article {
 
 .article-img {
     width: 45em;
+    height: 25.3125em;
+    object-fit: cover;
 }
 
 .promo-activity {
@@ -108,4 +134,61 @@ article {
     text-align: center;
     background-size: contain;
     height: 22em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.promo-text {
+    color: white;
+    text-shadow: black 0 0 3px;
+    font-size: 3em;
+}
+
+.promo-button {
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: var(--orange-yellow);
+    color: white;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.promo-button:hover {
+    background-color: var(--orange-yellow-hover);
+    cursor: pointer;
+}
+
+.city-activity-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.city-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.excursion-divider {
+    background-image: url(../assets/pictures/excursion-divider.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.excursion-divider h2 {
+    font-size: 2em;
+    color: var(--dark-blue);
+    text-shadow: white 0 0 3px;
+    background-color: rgba(255, 255, 255, .9)
 }
