@@ -34,6 +34,11 @@ header {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     margin-right: 2em;
 }
@@ -56,6 +61,28 @@ article {
 city-content {
     display: flex;
     flex-direction: column;
+    margin: 0 2em;
+}
+
+faq {
+    display: flex;
+    flex-direction: column;
+}
+
+faq>* {
+    padding-left: 1em;
+}
+
+question {
+    background-color: #fcc04941;
+    font-size: 1.5em;
+}
+
+answer {
+    background-color: #f7800062;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    padding-left: 2em;
 }
 
 city-content h2 {
@@ -64,6 +91,10 @@ city-content h2 {
 
 excursion-content {
     margin: 0 10em;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .logo {
@@ -128,6 +159,18 @@ excursion-content {
     object-fit: cover;
 }
 
+.grid-img {
+    width: 28em;
+    height: 15.75em;
+    object-fit: cover;
+}
+
+.img-rail-vertical img {
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+}
+
 .promo-activity {
     margin: 3em 0;
     background-image: url(../assets/pictures/promo-volcano.jpg);
@@ -173,6 +216,7 @@ excursion-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 1em;
 }
 
 .excursion-divider {
@@ -190,5 +234,70 @@ excursion-content {
     font-size: 2em;
     color: var(--dark-blue);
     text-shadow: white 0 0 3px;
-    background-color: rgba(255, 255, 255, .9)
+    background-color: rgba(255, 255, 255, .9);
+    padding: .2em 1em;
+}
+
+.getting-to-taniti-main h1 {
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.getting-to-taniti-main>* {
+    margin: 1em 0;
+}
+
+.primary-travel-option-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.primary-travel-option {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.secondary-travel-option-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary-travel-option {
+    text-align: center;
+    margin: 0 .8em;
+}
+
+.lodging-and-dining-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cuisine-slider {
+    height: 15em;
+    background-image: url(../assets/pictures/cuisine-slider-1.jpg);
+    background-size: contain;
+    margin: 3em 0;
+}
+
+.lodging-and-dining-article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+}
+
+.lodging-and-dining-article>* {
+    text-align: center;
+}
+
+.img-rail-vertical {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.faq-header {
+    margin-left: 2em;
 }
